@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../../../../../../../../webapp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../../../../../../webapp/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../../../../../../../../webapp/css/application.css" rel="stylesheet">
+  <script src="../../../../../../../../webapp/js/jquery.min.js"></script>
+  <script src="../../../../../../../../webapp/bootstrap/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="nav"></div>
+
+<div class="container" data-field="app-template">
+  <table class="table-hover table-rounded">
+    <colgroup>
+      <col span="1" style="width: 50%;">
+      <col span="1" style="width: 50%;">
+    </colgroup>
+    <tbody>
+    <tr>
+      <td class="text-right text-primary">Description</td>
+      <td><div data-field="name">Cras justo odio</div></td>
+    </tr>
+    <tr>
+      <td class="text-right text-primary">Name</td>
+      <td><div data-field="complaint">Some name!</div></td>
+    </tr>
+    </tbody>
+  </table>
+  <br/>
+  <button type="button" class="btn btn-primary btn-block" data-field="all">View All</button>
+  <button type="button" class="btn btn-default btn-block" data-field="edit">Edit</button>
+  <button type="button" class="btn btn-default btn-block" data-field="create">Create New</button>
+</div>
+
+<div id=footer></div>
+
+<script>
+  $("#nav").load("../template.html #navbar");
+  $("#footer").load("../template.html #footer");
+</script>
+
+</body>
+</html>

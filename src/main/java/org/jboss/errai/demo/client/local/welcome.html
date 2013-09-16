@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../../../../../../../webapp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../../../../../webapp/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../../../../../../../webapp/css/application.css" rel="stylesheet">
+
+  <script src="../../../../../../../webapp/js/jquery.min.js"></script>
+  <script src="../../../../../../../webapp/bootstrap/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="nav"></div>
+
+<div class="container" data-field="panel">
+  <div class="alert alert-success">
+    <span class="glyphicon glyphicon-ok"></span> Your application is running.
+  </div>
+
+  <div class="jumbotron">
+    <h1>Welcome to Forge</h1>
+
+    <p>
+    <ul>
+      <li>
+        <a target="_blank" href="http://forge.jboss.org/docs/index.html">Documentation</a>
+      </li>
+      <li>
+        <a href="#" target="_blank"
+           href="http://twitter.com/intent/tweet?text=I+just+built+and+deployed+a+webapp+using+%23Forge,+from+%23JBoss+-+Super+easy!+(+http://jboss.org/forge+)">
+          Get Excited!
+        </a>
+      </li>
+    </ul>
+    </p>
+  </div>
+
+  <div class="list-group">
+    <a href="#" class="list-group-item" data-field="userComplaints">User complaints</a>
+    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+    <a href="#" class="list-group-item">Morbi leo risus</a>
+    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+    <a href="#" class="list-group-item">Vestibulum at eros</a>
+  </div>
+</div>
+
+<div id=footer></div>
+
+<script>
+  $("#nav").load("template.html #navbar");
+  $("#footer").load("template.html #footer");
+</script>
+
+</body>
+</html>

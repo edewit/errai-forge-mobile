@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../../../../../../../../webapp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../../../../../../webapp/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../../../../../../../../webapp/css/application.css" rel="stylesheet">
+
+  <script src="../../../../../../../../webapp/js/jquery.min.js"></script>
+  <script src="../../../../../../../../webapp/bootstrap/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id=nav></div>
+
+<div class="container" data-field="app-template">
+  <div class="form-inline">
+    <div class="input-group">
+      <input type="text" class="form-control" data-field="search">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" data-field="searchButton">Search</button>
+      </span>
+    </div>
+  </div>
+
+  <div class="list-group" data-field="results">
+    <a class="list-group-item" data-field="item">
+    <span class="badge">
+      <span class="glyphicon glyphicon-play"></span>
+    </span>
+      <h4 class="list-group-item-heading" data-field="name">Cras justo odio</h4>
+
+      <p class="list-group-item-text" data-field="email">
+        erikjan@tet.com
+      </p>
+
+      <p class="list-group-item-text" data-field="complaint">
+        I don't like cats and there are so many on the internet
+      </p>
+    </a>
+    <a class="list-group-item">
+    <span class="badge">
+      <span class="glyphicon glyphicon-play"></span>
+    </span>
+      Dapibus ac facilisis in
+    </a>
+    <a class="list-group-item">
+    <span class="badge">
+      <span class="glyphicon glyphicon-play"></span>
+    </span>
+      Morbi leo risus
+    </a>
+  </div>
+</div>
+
+<div id="footer"></div>
+
+<script>
+  $("#nav").load("../template.html #navbar");
+  $("#footer").load("../template.html #footer");
+</script>
+</body>
+</html>

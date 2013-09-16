@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../../../../../../../webapp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../../../../../webapp/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../../../../../../../webapp/css/application.css" rel="stylesheet">
+
+  <script src="../../../../../../../webapp/js/jquery.min.js"></script>
+  <script src="../../../../../../../webapp/bootstrap/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div data-field="container">
+  <nav id=navbar class="navbar navbar-default navbar-fixed-top" role="navigation" data-field="nav">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Application name</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a data-field="userComplaints">User complaints</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" data-field="content" data-role="dummy">
+    <div class="alert alert-danger" data-field="error">
+      Error filling out the form
+    </div>
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="inputName" class="col-sm-2 control-label">Name</label>
+
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputName" placeholder="Name" data-field="name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-field="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputComplaint" class="col-sm-2 control-label">Complaint</label>
+
+        <div class="col-sm-10">
+          <textarea rows="3" class="form-control" id="inputComplaint" placeholder="Complaint"
+                    data-field="complaint"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-primary" data-field="submit">Save</button>
+          <button type="submit" class="btn btn-default" data-field="delete">Delete</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <nav id=footer class="navbar navbar-default navbar-fixed-bottom footer" data-field="footer">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-field="add">
+        <span class="glyphicon glyphicon-plus-sign"></span>
+      </button>
+    </div>
+  </nav>
+
+</div>
+</body>
+</html>
